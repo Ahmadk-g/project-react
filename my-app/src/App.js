@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import FunctionalGreeting from "./components/FunctionalGreeting";
-import FunctionalGreetingWithProps from "./components/FunctionalGreetingWithProps";
+// import FunctionalGreetingWithProps from "./components/FunctionalGreetingWithProps";
+// import StatefulGreeting from './components/StatefulGreeting';
+// import StatefulGreetingWithCallback from './components/StatefulGreetingWithCallback';
+import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 
 function App() {
   return (
     <div className="App">
       {/* <FunctionalGreeting /> */}
-      <FunctionalGreetingWithProps />
+      {/* <FunctionalGreetingWithProps greeting="nice to meet you!" name="Mike" age="32"  /> */}
+      <StatefulGreetingWithPrevState greeting="I'm a stateful class component!" name="Mike" />
     </div>
   );
 }
